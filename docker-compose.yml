@@ -1,7 +1,7 @@
 version: "3"
 services:
   api:
-    image: awto/qa-microservice
+    image: qa/microservice
     build:
       context: .
       dockerfile: Dockerfile
