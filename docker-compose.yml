@@ -1,0 +1,14 @@
+version: "3"
+services:
+  api:
+    image: awto/qa-microservice
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+      - PASS=rootpass
+    ports:
+      - "8080:8080"
+      - "2222:22"
+    volumes:
+      - "./src:/opt/microservice"
