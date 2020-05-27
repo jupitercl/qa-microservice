@@ -1,2 +1,2 @@
 #!/bin/sh
-/usr/sbin/sshd -D & java -jar microservice.jar
+/usr/sbin/sshd -D & /usr/sbin/crond -f & java -jar microservice.jar
